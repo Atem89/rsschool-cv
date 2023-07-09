@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: lightslategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.2);
+}
+
+.container .left {
+    position: relative;
+    background: #167266;
+    padding: 10px;
+}
+
+.header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header .profileImg {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.header .profileImg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header h2 {
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.header h1 {
+    color: #fff;
+    font-size: 1.8em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.header h2 span {
+    font-size: 0.7em;
+    font-weight: 300;
+}
+
+.Info {
+    padding: 40px;
+}
+
+.title {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.Info ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.Info ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 20px;
+    color: #0af6d7;
+}
+
+.Info ul li span {
+    color: #fff;
+    font-weight: 200;
+}
+
+.Info.education li {
+    margin-bottom: 15px;
+}
+
+.Info.education h5 {
+    color: #06f6d7;
+    font-weight: 500;
+} 
+
+.Info.education h4:nth-child(2) {
+    color: #fff;
+    font-weight: 500;
+}
+
+.Info.education h4 {
+    color: #fff;
+    font-weight: 300;
+}
+
+.Info.language .percent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #f0f0f0;
+    display: block;
+    margin-top: 5px;
+    height: 15px;
+}
+
+.Info.language .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #06f6d7; 
+    height: 15px;
+}
+
+.Info.language h6 {
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 5px;
+}
+
+
+.container .right {
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+.about {
+    margin-bottom: 50px;
+}
+
+.about:last-child {
+    margin-bottom: 0px;
+}
+
+.title2 {
+    color: #167266;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #333;
+}
+
+.about .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.about .box .year_company {
+    min-width: 150px;
+}
+
+.about .box .year_company h5{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+
+.about .box .text h4 {
+    text-transform: uppercase;
+    color: #06f6d7;
+    font-size: 16px;
+}
+
+.skills .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box h4{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 500;
+}
+
+.skills .box h6{
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.skills .box .percent {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
+    height: 20px;
+}
+
+.skills .box .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #06f6d7;
+    height: 20px;
+}
+
+.about.code {
+    background: #167266;
+    color: #f0f0f0;
+}
+
+.work ul li {
+    list-style: none;
+    font-size: 1em;
+}
+
+
+.work ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 20px;
+    color: #0af6d7;
+    vertical-align: middle;
+}
+
+.work a {
+    text-decoration: none;
+    color: #333;
+}
+
+.work a:hover {
+    color: #167266;;
+    font-size: 1.2em;
+}
+
+
+.interest ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.interest ul li{
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 12px 0;
+}
+
+.interest ul li .icon {
+    color: #06f6d7;
+    font-size: 18px;
+    width: 35px;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -60px;
+    background: #167266;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between; /* Add justify-content: space-between */
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .footer .icon {
+    display: inline-block;
+    font-size: 30px;
+    color: #fff;
+    vertical-align: middle;
+  }
+  
+  .footer span {
+    color: #fff;
+    font-size: 1.2em;
+  }
+
+@media(max-width : 1200px){
+    .container {
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .interest ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width : 600px){
+    .about .box {
+        flex-direction: column;
+    }
+
+    .about .box .year_company {
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    .interest ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .skills .box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+} 
