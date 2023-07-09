@@ -4,9 +4,204 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <title>RSSchool CV</title>
 </head>
 <body>
+    <main class="container">
+        <aside class="left">
+            <header class="header">
+                <div class="profileImg">
+                    <img src="img/logo.jpg" alt="Header avatar">
+                </div>
+                <h1>Bortnic Eugeniu</h1><h2><span>Junior Frontend Developer</span></h2>
+            </header>
+           
+            <nav class="Info">
+                <h3 class="title">Contact Info</h3>
+                <ul>
+                    <li>
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                        <span class="text">jeniabortnic@gmail.com</span>
+                    </li>
+
+                    <li>
+                        <span class="icon"><ion-icon name="send-outline"></ion-icon></span>
+                        <span class="text">https://t.me/Jack_bn</span>
+                    </li>
+
+                    <li>
+                        <span class="icon"><ion-icon name="location-outline"></ion-icon></span>
+                        <span class="text">https://github.com/Atem89</span>
+                    </li>
+
+                    <li>
+                        <span class="icon"><ion-icon name="logo-github"></ion-icon></span>
+                        <span class="text">Cahul, Republic of Moldova</span>
+                    </li>
+                </ul>
+            </nav>
+           
+            <section class="Info education">
+                <h2 class="title">Education</h2>
+                <ul>
+                    <li>
+                        <h5>2008 - 2011</h5>
+                        <h4>Degree of Licentiate in Economic Sciences</h4>
+                        <h4>Cahul State University "Bogdan Petriceicu Hasdeu"</h4>
+                    </li>
+
+                    <li>
+                        <h5>2018 - 2020</h5>
+                        <h4>Degree of Master of Economics</h4>
+                        <h4>Cahul State University "Bogdan Petriceicu Hasdeu"</h4>
+                    </li>
+
+                    <li>
+                        <h5>2020 - 2021</h5>
+                        <h4>Professional Retraining program for Informatics</h4>
+                        <h4>Institute of Continuous Training, Chisinau</h4>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="Info language">
+                <h3 class="title">Languages</h3>
+                <ul>
+                    <li>
+                        <span class="text">English (A2)</span>
+                    </li>
+
+                    <li>
+                        <span class="text">Russian (Native)</span>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+
+
+        <article class="right">
+            <div class="about">
+                <h2 class="title2">Profile</h2>
+                <p>As a junior web developer with a passion for front-end development, I am constantly seeking to expand my knowledge and skills in web design and development. I embrace challenges and am a quick learner, always eager to learn something new. I am continually experimenting with different techniques and methods to improve my skills in web development</p>
+            </div>
+
+            <section class="about">
+                <h2 class="title2">Experience</h2>
+                <div class="box">
+                    <div class="year_company">
+                        <h5>2022 - Present</h5>
+                        <h5>"Ioan Vodă" Theoretical High School</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Computer Science Teacher</h4>
+                        <p>The role of a Computer Science Teacher involves imparting knowledge, fostering critical thinking, nurturing problem-solving skills, and preparing students for a future in the dynamic field of computer science.</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="year_company">
+                        <h5>2011 - 2022</h5>
+                        <h5>"Iulia Hasdeu" College</h5>
+                    </div>
+                    <div class="text">
+                        <h4>Professor of Economic Disciplines</h4>
+                        <p>The role of an economics professor goes beyond teaching and research: mentoring students, conducting valuable research, contributing to scholarship, and positively influencing the field of economics.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about skills">
+                <h2 class="title2">Professional Skills</h2>
+                <div class="box">
+                    <h4>HTML</h4>
+                    <div class="percent">
+                        <div style="width: 70%;"><h6>70%</h6></div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h4>CSS</h4>
+                    <div class="percent">
+                        <div style="width: 50%;"><h6>50%</h6></div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h4>Javascript</h4>
+                    <div class="percent">
+                        <div style="width: 40%;"><h6>40%</h6></div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h4>Python</h4>
+                    <div class="percent">
+                        <div style="width: 50%;"><h6>50%</h6></div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h4>Sql</h4>
+                    <div class="percent">
+                        <div style="width: 40%;"><h6>40%</h6></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about example">
+                <h2 class="title2">Example of code</h2>
+                    <div class="about code"> 
+                        <pre>             
+                            <code>
+    function humanReadable (seconds) {
+                    
+        let h = Math.floor(seconds / 3600)
+        let m = Math.floor((seconds - h*3600)/60)
+        let s = seconds - h*3600 - m*60;
+                                
+        return `${Math.trunc(h/10)}${h%10}:${Math.trunc(m/10)}${m%10}:${Math.trunc(s/10)}${s%10}`;                 
+    }
+                            </code>
+                        </pre>
+                    </div>
+            </section>
+
+            <section class="about work">
+                <h2 class="title2">Work examples</h2>
+                <ul>
+                    <li>
+                        <span class="icon"><ion-icon name="link-outline"></ion-icon></span>
+                        <span class="text"><a href="https://extraordinary-cuchufli-08a724.netlify.app/">Currency</a></span>       
+                    </li>
+                    <li>
+                        <span class="icon"><ion-icon name="link-outline"></ion-icon></span>
+                        <span class="text"><a href="https://cosmic-daifuku-f45062.netlify.app/">Digital Clock</a></span>
+                    </li>
+                </ul>
+            </section>
+
+
+            <section class="about interest">
+                <h2 class="title2">Interests</h2>
+                <ul>
+                    <li><ion-icon class="icon" name="book-outline"></ion-icon>Reading</li>
+                    <li><ion-icon class="icon" name="basketball-outline"></ion-icon>Basketball</li>
+                    <li><ion-icon class="icon" name="car-sport-outline"></ion-icon>Travling</li>
+                    <li><ion-icon class="icon" name="game-controller-outline"></ion-icon>Game</li>
+                </ul>
+            </section>
+        </article>
+        <footer class="footer">
+            <span class="icon"><a href="https://github.com/atem89"><ion-icon name="logo-github"></ion-icon></a></span>
+            <span class="text">2023</span>
+            <a href="https://rs.school/js/" target="_blank">
+                <img src="img/rs-logo.svg" width="86" height="32" alt="RS School">
+              </a>
+        </footer>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
